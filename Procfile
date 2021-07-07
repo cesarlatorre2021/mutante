@@ -1,0 +1,1 @@
+web: java -jar -Dspring.profiles.active=pdn target/adnMutante-1.0.jar

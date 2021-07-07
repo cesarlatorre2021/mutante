@@ -9,13 +9,15 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>activos-fijos-1</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>activos-fijos-1</name>
+	<artifactId>adnMutante</artifactId>
+	<version>1.0</version>
+	<name>adnMutante</name>
 	<description>Demo project for Spring Boot</description>
+	
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+	
 	<dependencies>
 	    <dependency>
 			<groupId>org.springframework.boot</groupId>
