@@ -18,12 +18,12 @@ Nivel 3 completo:
 
 ## Instrucciones para su prueba
 
-El servicio se encuentra desplegado en [http://dna-analyzer.us-east-2.elasticbeanstalk.com/](http://dna-analyzer.us-east-2.elasticbeanstalk.com/)
+El servicio se encuentra desplegado en [https://adnmutantes.herokuapp.com/](https://adnmutantes.herokuapp.com/)
 
 El servicio actualmente cuenta con los siguientes métodos:
  
  * Método POST para detectar si un ADN dado es mutante:<br><br>
-  La URL del método es [http://dna-analyzer.us-east-2.elasticbeanstalk.com/mutant](http://dna-analyzer.us-east-2.elasticbeanstalk.com/mutant)<br><br>
+  La URL del método es [https://adnmutantes.herokuapp.com/adn-mutante/api/mutant](https://adnmutantes.herokuapp.com/adn-mutante/api/mutant)<br><br>
 Se puede detectar si un humano es mutante enviando la secuencia de ADN mediante un HTTP POST con un Json el cual tenga el siguiente formato:<br><br>
 POST → /mutant/<br />
 {<br />
@@ -32,7 +32,7 @@ POST → /mutant/<br />
 En caso de verificar que el ADN enviado es mutante, el método devuelve como respuesta un HTTP 200-OK, en caso contrario un
 403-Forbidden <br><br>
 * Método GET para obtener las estadísticas de las verificaciones de ADN para Magneto<br><br>
-La URL del método es [http://dna-analyzer.us-east-2.elasticbeanstalk.com/stats](http://dna-analyzer.us-east-2.elasticbeanstalk.com/stats)<br><br>
+La URL del método es [https://adnmutantes.herokuapp.com/adn-mutante/api/stats](https://adnmutantes.herokuapp.com/adn-mutante/api/stats)<br><br>
 
 ## Descarga del código fuente
    
@@ -40,13 +40,13 @@ La URL del método es [http://dna-analyzer.us-east-2.elasticbeanstalk.com/stats]
    
    #### Repositorio
    
-   El código se encuentra alojado en Heroku. Para descargarlo necesita un cliente git, que puede encontrarlo en https://git-scm.com/downloads
+   El código se encuentra alojado en GitHub. Para descargarlo necesita un cliente git, que puede encontrarlo en https://git-scm.com/downloads
    
    * Cree una carpeta en donde se incluirá el código fuente<br>
    * Abra su consola y posicionese en la carpeta previamente creada<br>
    * Ejecute el comando<br>
    
-    git clone https://github.com/robertoavilla/DNA-Analyzer.git
+    git clone https://github.com/cesarlatorre2021/mutante.git
    
    Luego de que termine la descarga, usted tendrá clonado el branch master en la carpeta previamente creada.
 

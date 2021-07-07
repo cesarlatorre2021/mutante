@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,10 +24,10 @@ public class MutanteController {
 	@Autowired
     private MutanteService mutanteService;
 	
-    @PostMapping("/stats")
+    @GetMapping("/stats")
     @ApiOperation("Permite validar las estadisticas de las verificaciones de ADN")
     @ApiResponse(code = 200, message = "OK")
-   	public ResponseEntity<ValidacionesADN> isMutant(@RequestBody List<Dna> mutante) {	
+   	public ResponseEntity<ValidacionesADN> isMutant() {	
         return new ResponseEntity<ValidacionesADN> (mutanteService.validacion(),HttpStatus.OK);
    	}
     
